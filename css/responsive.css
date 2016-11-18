@@ -53,14 +53,14 @@ h1{
 
 }
 
-
-
 ol{
 	list-style:upper-roman;
 	margin:1em;
 }
 img{
-	display: none;
+	display: inline-block;
+	width: 140px;
+	height: 140px;
 }
 
 footer{
@@ -69,41 +69,12 @@ footer{
 	text-transform: uppercase;
 }
 
-/*no change in above rules
-rules for screen bigger than 900px*/
-@media screen and (min-width:900px) {
+@media screen and (min-width:970px) {
 	header, footer {
 		background-color: transparent;
 	}
 
-	section {
-		display: inline-block;
-		float: left;
-	}
-
-	section#left {
-		width: 30%;
-	}
-
-	section#center {
-		width: 60%
-	}
-
-	img {
-		display: inline-block;
-		width: 20%;
-		margin: 1%;
-	}
-
 	header h1:after {
 		content: "(I guess...)"
-	}
-}
-
-@media print {
-	background-color: none;
-
-	nav a {
-		border: none;
 	}
 }
